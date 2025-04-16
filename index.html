@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miel Natural - Dulzura Pura</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MielPura</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Miel Natural</h1>
+            <h2>Directo de la Colmena a tu Mesa</h2>
+            <p>Disfruta del sabor auténtico de la naturaleza en cada gota</p>
+            <button class="cta-btn" id="comprar-btn">Comprar Ahora</button>
+        </div>
+    </section>
+
+    <section id="productos" class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-container">
+            <div class="producto-card">
+                <img src="/api/placeholder/300/300" alt="Miel de Flores">
+                <h3>Miel de Flores</h3>
+                <p>Delicada y aromática, perfecta para endulzar tés y postres.</p>
+<p class="precio">CLP$8.990</p>
+                <button class="comprar-producto" data-id="1">Añadir al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="/api/placeholder/300/300" alt="Miel de Bosque">
+                <h3>Miel de Bosque</h3>
+                <p>Sabor intenso y oscuro, ideal para combinar con quesos.</p>
+<p class="precio">CLP$10.990</p>
+                <button class="comprar-producto" data-id="2">Añadir al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="/api/placeholder/300/300" alt="Miel con Panal">
+                <h3>Miel con Panal</h3>
+                <p>La experiencia completa de la colmena en tu mesa.</p>
+<p class="precio">CLP$12.990</p>
+                <button class="comprar-producto" data-id="3">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="beneficios">
+        <h2>Beneficios de Nuestra Miel</h2>
+        <div class="beneficios-container">
+            <div class="beneficio">
+                <i class="fas fa-leaf"></i>
+                <h3>100% Natural</h3>
+                <p>Sin aditivos ni conservantes, solo miel pura.</p>
+            </div>
+            <div class="beneficio">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Saludable</h3>
+                <p>Rica en antioxidantes y propiedades antibacterianas.</p>
+            </div>
+            <div class="beneficio">
+                <i class="fas fa-seedling"></i>
+                <h3>Sostenible</h3>
+                <p>Producción respetuosa con las abejas y el medio ambiente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>¿Tienes alguna pregunta?</h2>
+        <div class="contacto-container">
+            <form id="contacto-form">
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+
+            <div class="info-contacto">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Calle Abeja 123, Colmenar Viejo</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+123 456 7890</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@mielpura.com</p>
+                </div>
+                <div class="redes-sociales">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contactame-container">
+        <button id="contactame-btn" class="contactame-btn">Contáctame</button>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>MielPura</h3>
+                <p>Ofrecemos miel de la más alta calidad, directamente de la colmena a tu mesa.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Calle Abeja 123, Colmenar Viejo</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@mielpura.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MielPura - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="cart-items">
+                <!-- Los items del carrito se añadirán aquí -->
+            </div>
+            <div class="total">
+<p>Total: <span id="cart-total">CLP$0.000</span></p>
+            </div>
+            <button id="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
