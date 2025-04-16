@@ -27,7 +27,7 @@ h2 {
 header {
     background-color: #FFC107;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: relative; /* Añadido para posicionamiento relativo */
     top: 0;
     z-index: 100;
 }
@@ -133,6 +133,7 @@ nav {
     padding: 20px;
     border-radius: 10%;
     text-align: center;
+    margin-top: -80px; /* Ajustado para pegarse a la imagen */
 }
 
 
@@ -530,12 +531,22 @@ section.visible {
 }
 
 @media (max-width: 768px) {
+    header {
+        position: sticky;
+        
+    }
     nav {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
         padding: 15px 20px;
     }
     
     .menu-toggle {
         display: flex;
+        align-self: flex-end;
+        margin-right: 20px;
+        
     }
     
     .nav-links {
@@ -548,18 +559,22 @@ section.visible {
         align-items: center;
         padding: 20px 0;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        transform: translateY(-150%);
+        transform: translateY(-200%);
         transition: transform 0.3s ease;
         z-index: 99;
     }
     
     .nav-links.active {
-        transform: translateY(0);
+        transform: translateY(-17%);
+        display: block;
+        text-align: center;
+        
     }
     
     .nav-links a {
-        margin: 10px 0;
+        margin: 8px;
         font-size: 1.1rem;
+ 
     }
     
     .hero h1 {
@@ -572,6 +587,28 @@ section.visible {
     
     section {
         padding: 60px 15px;
+    }
+
+    .logo {
+        max-width: 50px;
+        max-height: 50px;
+        left: 20px;
+        top: 2px;
+    }
+
+    .titulo {
+        position: absolute;
+        left: 75px;
+        top: 0px;
+    }
+
+    .titulo h1 {
+        font-size: 1.2rem;
+        
+    }
+
+    .titulo h2 {
+        font-size: 0.8rem;
     }
     
     h2 {
