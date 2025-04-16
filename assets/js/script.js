@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Datos de productos
 const productos = [
-        { id: 1, nombre: 'Miel de Flores', precio: 8990 },
-        { id: 2, nombre: 'Miel de Bosque', precio: 10990 },
-        { id: 3, nombre: 'Miel con Panal', precio: 12990 }
+        { id: 1, nombre: 'Miel de Flores 1kl', precio: 8990 },
+        { id: 2, nombre: 'Miel de Bosque 1kl', precio: 10990 },
+        { id: 3, nombre: 'Miel con Panal 200gr', precio: 12990 }
     ];
     
     // Carrito de compras
