@@ -60,7 +60,7 @@ const productos = [
         contactameBtn.addEventListener('click', () => {
             // Aquí puedes cambiar la dirección de correo por la tuya
             const email = 'info@mielpura.com';
-            const subject = 'Consulta sobre productos de miel';
+            const subject = 'Consulta sobre productos.';
             const body = 'Hola, estoy interesado en tus productos de miel y me gustaría obtener más información.';
             
             window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
